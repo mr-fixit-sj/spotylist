@@ -1,0 +1,2562 @@
+{
+  "builtAt": "2026-10-03T17:39:50.237Z",
+  "date": "2026-10-03",
+  "totals": {
+    "songs": 63179,
+    "linked": 19526,
+    "imported": 17051,
+    "fixed": 64,
+    "missed": 68,
+    "pending": 43585
+  },
+  "quota": {
+    "windowStart": "2026-10-03T17:30:30.563Z",
+    "requests": 5
+  },
+  "imports": [
+    {
+      "file": "01sj-this-is-chipz-2026-10-03.json",
+      "name": "01sj This is Chipz",
+      "exported": "2026-10-03",
+      "tracks": 37
+    },
+    {
+      "file": "111-billboard-top-100-songs-of-each-year-2026-10-02.json",
+      "name": "111 Billboard Top 100 songs of each year 1950-2025",
+      "exported": "2026-10-02",
+      "tracks": 6867
+    },
+    {
+      "file": "1sj-1999-top-100-uk-hits-2026-10-02.json",
+      "name": "1SJ 1999 Top 100 UK Hits",
+      "exported": "2026-10-02",
+      "tracks": 95
+    },
+    {
+      "file": "1sj-538-zomer-top-1000-2026-2026-10-02.json",
+      "name": "1sj 538 Zomer Top 1000!  2026",
+      "exported": "2026-10-02",
+      "tracks": 866
+    },
+    {
+      "file": "1sj-90-s-top-1000-nederlandse-top-40-2026-10-02.json",
+      "name": "1sj 90's Top 1000 | Nederlandse Top 40",
+      "exported": "2026-10-02",
+      "tracks": 931
+    },
+    {
+      "file": "1sj-bb-1999-2026-10-02.json",
+      "name": "1sj bb 1999",
+      "exported": "2026-10-02",
+      "tracks": 99
+    },
+    {
+      "file": "1sj-de-538-party-top-1000-2025-2026-10-02.json",
+      "name": "1sj De 538 PARTY TOP 1000 - 2025",
+      "exported": "2026-10-02",
+      "tracks": 1000
+    },
+    {
+      "file": "1sj-de-zomer-top-538-2026-2026-10-02.json",
+      "name": "1sj De ZOMER TOP 538 - 2026",
+      "exported": "2026-10-02",
+      "tracks": 538
+    },
+    {
+      "file": "1sj-hits-2020-2025-nl-2026-10-02.json",
+      "name": "1sj HITS 2020 - 2025 NL",
+      "exported": "2026-10-02",
+      "tracks": 874
+    },
+    {
+      "file": "1sj-radio-10-top-4000-2023-2026-10-02.json",
+      "name": "1sj Radio 10 Top 4000 - 2023",
+      "exported": "2026-10-02",
+      "tracks": 3995
+    },
+    {
+      "file": "1sj-radio-10-top-4000-2025-2026-10-02.json",
+      "name": "1sj Radio 10 Top 4000 2025",
+      "exported": "2026-10-02",
+      "tracks": 3986
+    },
+    {
+      "file": "1sj-top-2000-1e-jaargang-editie-1999-2026-10-02.json",
+      "name": "1sj Top 2000 - 1e jaargang - editie 1999",
+      "exported": "2026-10-02",
+      "tracks": 1975
+    },
+    {
+      "file": "1sj-top-40-1965-2026-10-02.json",
+      "name": "1Sj Top 40 - 1965",
+      "exported": "2026-10-02",
+      "tracks": 246
+    },
+    {
+      "file": "1sj2003-2026-10-02.json",
+      "name": "1sj2003",
+      "exported": "2026-10-02",
+      "tracks": 1299
+    },
+    {
+      "file": "1sjnederlandse-top-40-2012-2026-10-02.json",
+      "name": "1sjNederlandse Top 40 2012",
+      "exported": "2026-10-02",
+      "tracks": 192
+    },
+    {
+      "file": "1sjspotify-s-top-1000-songs-1950-1999-2026-10-02.json",
+      "name": "1sjSpotify's Top 1000+ Songs 1950-1999",
+      "exported": "2026-10-02",
+      "tracks": 1003
+    },
+    {
+      "file": "1sjtop-40-2012-2026-10-02.json",
+      "name": "1sjTop 40 - 2012",
+      "exported": "2026-10-02",
+      "tracks": 184
+    },
+    {
+      "file": "1sjzomer-hits-2026-summer-vibes-2026-10-02.json",
+      "name": "1sjZomer Hits 2026 🌞 Summer Vibes",
+      "exported": "2026-10-02",
+      "tracks": 472
+    },
+    {
+      "file": "2sjhits-from-1999-till-now-2026-10-02.json",
+      "name": "2sjHits from 1999 till now",
+      "exported": "2026-10-02",
+      "tracks": 3196
+    },
+    {
+      "file": "2sjtop-1000-greatest-songs-of-all-time-2026-10-02.json",
+      "name": "2sjTop 1000 Greatest Songs of All Time",
+      "exported": "2026-10-02",
+      "tracks": 1000
+    },
+    {
+      "file": "3sj-538-90-s-top-1000-2025-2026-10-02.json",
+      "name": "3sj 538 90's Top 1000 (2025)",
+      "exported": "2026-10-02",
+      "tracks": 990
+    },
+    {
+      "file": "3sj-billboard-hits-2020-2026-2026-10-02.json",
+      "name": "3sj Billboard Hits: 2020–2026",
+      "exported": "2026-10-02",
+      "tracks": 142
+    },
+    {
+      "file": "3sj-top-40-1982-alle-352-hits-op-volgord-2026-10-02.json",
+      "name": "3sj Top 40 1982 alle 352 hits op volgorde!",
+      "exported": "2026-10-02",
+      "tracks": 332
+    },
+    {
+      "file": "3sj2000s-hits-top-1000-2026-10-02.json",
+      "name": "3sj2000s Hits Top 1000",
+      "exported": "2026-10-02",
+      "tracks": 999
+    },
+    {
+      "file": "de-538-top-1000-2022-2-2026-09-30.json",
+      "name": "De 538 TOP 1000 - 2022 (2)",
+      "exported": "2026-09-30",
+      "tracks": 1000
+    },
+    {
+      "file": "de-538-top-1000-2023-2-2026-09-30.json",
+      "name": "De 538 TOP 1000 - 2023 (2)",
+      "exported": "2026-09-30",
+      "tracks": 1000
+    },
+    {
+      "file": "nl-top-2000-1999-2025-2026-09-30.json",
+      "name": "NL Top 2000 (1999 - 2025)",
+      "exported": "2026-09-30",
+      "tracks": 5644
+    },
+    {
+      "file": "sj-1990-1991-1992-1993-1994-1995-1996-19-2026-10-02.json",
+      "name": "SJ 1990│1991│1992│1993│1994│1995│1996│1997│1998│1999 Hits",
+      "exported": "2026-10-02",
+      "tracks": 413
+    },
+    {
+      "file": "sj-billboard-2018-2020-2026-10-01.json",
+      "name": "SJ Billboard 2018 - 2020",
+      "exported": "2026-10-01",
+      "tracks": 186
+    },
+    {
+      "file": "sj-billboard-chart-toppers-1955-2020-2026-10-01.json",
+      "name": "SJ Billboard Chart Toppers: 1955-2020",
+      "exported": "2026-10-01",
+      "tracks": 3545
+    },
+    {
+      "file": "sj-top-40-1996-alle-324-hits-op-volgorde-2026-10-02.json",
+      "name": "SJ Top 40 1996 alle 324 hits op volgorde!",
+      "exported": "2026-10-02",
+      "tracks": 302
+    },
+    {
+      "file": "sj-top-hits-of-2020-2026-10-01.json",
+      "name": "SJ Top Hits of 2020",
+      "exported": "2026-10-01",
+      "tracks": 129
+    },
+    {
+      "file": "sjtop-2000-radio-2-top-2000-2025-complet-2026-09-30.json",
+      "name": "SjTop 2000 | Radio 2 Top 2000 2025 | Complete Top 2000 van 2025 | Editie 2025 | Top 2025 Compleet",
+      "exported": "2026-09-30",
+      "tracks": 488
+    },
+    {
+      "file": "top-100-billboard-hits-of-2017-2018-2019-2026-09-30.json",
+      "name": "Top 100 Billboard Hits of 2017, 2018, 2019 & 2020 (2)",
+      "exported": "2026-09-30",
+      "tracks": 400
+    },
+    {
+      "file": "top-1000-00-s-2026-09-30.json",
+      "name": "Top 1000 - 00's",
+      "exported": "2026-09-30",
+      "tracks": 1625
+    },
+    {
+      "file": "us-top-40-1965-1985-2026-09-30.json",
+      "name": "US Top 40 (1965–1985) ",
+      "exported": "2026-09-30",
+      "tracks": 7609
+    },
+    {
+      "file": "us-top-40-every-song-from-the-1970s-2026-09-30.json",
+      "name": "US Top 40 - every song from the 1970s",
+      "exported": "2026-09-30",
+      "tracks": 2417
+    }
+  ],
+  "charts": [
+    {
+      "id": "beatport-trance-main-floor",
+      "label": "Trance – Main Floor",
+      "kind": "weekly",
+      "snapshot": true,
+      "site": "https://www.beatport.com",
+      "first": "2026-39",
+      "last": "2026-40",
+      "periods": 2,
+      "songs": 108,
+      "linked": 108,
+      "imported": 0,
+      "fixed": 10,
+      "missed": 0,
+      "pending": 0
+    },
+    {
+      "id": "beatport-trance-raw-deep-hypnotic",
+      "label": "Trance – Raw/Deep/Hypnotic",
+      "kind": "weekly",
+      "snapshot": true,
+      "site": "https://www.beatport.com",
+      "first": "2026-39",
+      "last": "2026-40",
+      "periods": 2,
+      "songs": 110,
+      "linked": 108,
+      "imported": 0,
+      "fixed": 2,
+      "missed": 2,
+      "pending": 0
+    },
+    {
+      "id": "beatport-techno-peak-time-driving",
+      "label": "Techno – Peak Time/Driving",
+      "kind": "weekly",
+      "snapshot": true,
+      "site": "https://www.beatport.com",
+      "first": "2026-39",
+      "last": "2026-40",
+      "periods": 2,
+      "songs": 105,
+      "linked": 105,
+      "imported": 0,
+      "fixed": 9,
+      "missed": 0,
+      "pending": 0
+    },
+    {
+      "id": "beatport-techno-raw-deep-hypnotic",
+      "label": "Techno – Raw/Deep/Hypnotic",
+      "kind": "weekly",
+      "snapshot": true,
+      "site": "https://www.beatport.com",
+      "first": "2026-39",
+      "last": "2026-40",
+      "periods": 2,
+      "songs": 106,
+      "linked": 104,
+      "imported": 0,
+      "fixed": 2,
+      "missed": 2,
+      "pending": 0
+    },
+    {
+      "id": "beatport-melodic-house-techno",
+      "label": "Melodic House & Techno",
+      "kind": "weekly",
+      "snapshot": true,
+      "site": "https://www.beatport.com",
+      "first": "2026-40",
+      "last": "2026-40",
+      "periods": 1,
+      "songs": 100,
+      "linked": 99,
+      "imported": 3,
+      "fixed": 0,
+      "missed": 1,
+      "pending": 0
+    },
+    {
+      "id": "beatport-mainstage",
+      "label": "Mainstage",
+      "kind": "weekly",
+      "snapshot": true,
+      "site": "https://www.beatport.com",
+      "first": "2026-40",
+      "last": "2026-40",
+      "periods": 1,
+      "songs": 100,
+      "linked": 100,
+      "imported": 6,
+      "fixed": 13,
+      "missed": 0,
+      "pending": 0
+    },
+    {
+      "id": "beatport-deep-house",
+      "label": "Deep House",
+      "kind": "weekly",
+      "snapshot": true,
+      "site": "https://www.beatport.com",
+      "first": "2026-40",
+      "last": "2026-40",
+      "periods": 1,
+      "songs": 100,
+      "linked": 100,
+      "imported": 2,
+      "fixed": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    {
+      "id": "nl-top40",
+      "label": "Nederlandse Top 40",
+      "kind": "weekly",
+      "site": "https://www.top40.nl",
+      "first": "1965-01",
+      "last": "2026-38",
+      "periods": 1808,
+      "songs": 7430,
+      "linked": 5270,
+      "imported": 4680,
+      "fixed": 17,
+      "missed": 26,
+      "pending": 2134,
+      "expected": 3220,
+      "stored": 1805,
+      "years": {
+        "1965": {
+          "weeks": 50,
+          "expected": 52,
+          "songs": 253,
+          "linked": 208,
+          "imported": 179,
+          "fixed": 4,
+          "missed": 1,
+          "pending": 44
+        },
+        "1966": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1967": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1968": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1969": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1970": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1971": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1972": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1973": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1974": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1975": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1976": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1977": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1978": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1979": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1980": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1981": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1982": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1983": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1984": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1985": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1986": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1987": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1988": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1989": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1990": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1991": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1992": {
+          "weeks": 12,
+          "expected": 53,
+          "songs": 106,
+          "linked": 55,
+          "imported": 48,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 51
+        },
+        "1993": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 323,
+          "linked": 176,
+          "imported": 157,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 147
+        },
+        "1994": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 322,
+          "linked": 161,
+          "imported": 141,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 161
+        },
+        "1995": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 327,
+          "linked": 178,
+          "imported": 155,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 149
+        },
+        "1996": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 325,
+          "linked": 275,
+          "imported": 256,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 50
+        },
+        "1997": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 302,
+          "linked": 174,
+          "imported": 152,
+          "fixed": 2,
+          "missed": 1,
+          "pending": 127
+        },
+        "1998": {
+          "weeks": 51,
+          "expected": 53,
+          "songs": 266,
+          "linked": 167,
+          "imported": 145,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 99
+        },
+        "1999": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 264,
+          "linked": 206,
+          "imported": 190,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 58
+        },
+        "2000": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 290,
+          "linked": 198,
+          "imported": 191,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 92
+        },
+        "2001": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 290,
+          "linked": 191,
+          "imported": 177,
+          "fixed": 0,
+          "missed": 4,
+          "pending": 95
+        },
+        "2002": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 291,
+          "linked": 187,
+          "imported": 167,
+          "fixed": 1,
+          "missed": 1,
+          "pending": 103
+        },
+        "2003": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 313,
+          "linked": 187,
+          "imported": 165,
+          "fixed": 0,
+          "missed": 3,
+          "pending": 123
+        },
+        "2004": {
+          "weeks": 52,
+          "expected": 53,
+          "songs": 287,
+          "linked": 180,
+          "imported": 163,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 105
+        },
+        "2005": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 301,
+          "linked": 193,
+          "imported": 171,
+          "fixed": 2,
+          "missed": 4,
+          "pending": 104
+        },
+        "2006": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 272,
+          "linked": 175,
+          "imported": 149,
+          "fixed": 3,
+          "missed": 2,
+          "pending": 95
+        },
+        "2007": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 270,
+          "linked": 164,
+          "imported": 138,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 104
+        },
+        "2008": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 272,
+          "linked": 182,
+          "imported": 153,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 90
+        },
+        "2009": {
+          "weeks": 52,
+          "expected": 53,
+          "songs": 255,
+          "linked": 200,
+          "imported": 174,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 54
+        },
+        "2010": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 249,
+          "linked": 183,
+          "imported": 174,
+          "fixed": 2,
+          "missed": 1,
+          "pending": 65
+        },
+        "2011": {
+          "weeks": 53,
+          "expected": 52,
+          "songs": 245,
+          "linked": 163,
+          "imported": 153,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 82
+        },
+        "2012": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 226,
+          "linked": 212,
+          "imported": 196,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 13
+        },
+        "2013": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 233,
+          "linked": 152,
+          "imported": 147,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 79
+        },
+        "2014": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 190,
+          "linked": 141,
+          "imported": 136,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 49
+        },
+        "2015": {
+          "weeks": 52,
+          "expected": 53,
+          "songs": 180,
+          "linked": 135,
+          "imported": 130,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 44
+        },
+        "2016": {
+          "weeks": 53,
+          "expected": 52,
+          "songs": 202,
+          "linked": 152,
+          "imported": 146,
+          "fixed": 0,
+          "missed": 3,
+          "pending": 47
+        },
+        "2017": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 193,
+          "linked": 183,
+          "imported": 180,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 9
+        },
+        "2018": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 192,
+          "linked": 181,
+          "imported": 177,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 10
+        },
+        "2019": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 185,
+          "linked": 182,
+          "imported": 181,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 3
+        },
+        "2020": {
+          "weeks": 52,
+          "expected": 53,
+          "songs": 191,
+          "linked": 187,
+          "imported": 177,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 4
+        },
+        "2021": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 210,
+          "linked": 208,
+          "imported": 196,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 2
+        },
+        "2022": {
+          "weeks": 53,
+          "expected": 52,
+          "songs": 193,
+          "linked": 193,
+          "imported": 180,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "2023": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 180,
+          "linked": 176,
+          "imported": 154,
+          "fixed": 1,
+          "missed": 1,
+          "pending": 3
+        },
+        "2024": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 180,
+          "linked": 180,
+          "imported": 123,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 0
+        },
+        "2025": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 176,
+          "linked": 166,
+          "imported": 57,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 10
+        },
+        "2026": {
+          "weeks": 38,
+          "expected": 38,
+          "songs": 145,
+          "linked": 107,
+          "imported": 12,
+          "fixed": 2,
+          "missed": 0,
+          "pending": 38
+        }
+      },
+      "remaining": 1415,
+      "days": 5
+    },
+    {
+      "id": "nl-decenniumlijst-60-s",
+      "label": "Decenniumlijst 60's",
+      "kind": "list",
+      "group": "Decenniumlijst",
+      "item": "60's",
+      "site": "https://www.top40.nl",
+      "first": "all",
+      "last": "all",
+      "periods": 1,
+      "songs": 100,
+      "linked": 99,
+      "imported": 0,
+      "fixed": 9,
+      "missed": 1,
+      "pending": 0
+    },
+    {
+      "id": "nl-decenniumlijst-70-s",
+      "label": "Decenniumlijst 70's",
+      "kind": "list",
+      "group": "Decenniumlijst",
+      "item": "70's",
+      "site": "https://www.top40.nl",
+      "first": "all",
+      "last": "all",
+      "periods": 1,
+      "songs": 100,
+      "linked": 99,
+      "imported": 0,
+      "fixed": 1,
+      "missed": 1,
+      "pending": 0
+    },
+    {
+      "id": "nl-decenniumlijst-80-s",
+      "label": "Decenniumlijst 80's",
+      "kind": "list",
+      "group": "Decenniumlijst",
+      "item": "80's",
+      "site": "https://www.top40.nl",
+      "first": "all",
+      "last": "all",
+      "periods": 1,
+      "songs": 100,
+      "linked": 100,
+      "imported": 0,
+      "fixed": 1,
+      "missed": 0,
+      "pending": 0
+    },
+    {
+      "id": "nl-decenniumlijst-90-s",
+      "label": "Decenniumlijst 90's",
+      "kind": "list",
+      "group": "Decenniumlijst",
+      "item": "90's",
+      "site": "https://www.top40.nl",
+      "first": "all",
+      "last": "all",
+      "periods": 1,
+      "songs": 100,
+      "linked": 99,
+      "imported": 0,
+      "fixed": 3,
+      "missed": 1,
+      "pending": 0
+    },
+    {
+      "id": "nl-decenniumlijst-00-s",
+      "label": "Decenniumlijst 00's",
+      "kind": "list",
+      "group": "Decenniumlijst",
+      "item": "00's",
+      "site": "https://www.top40.nl",
+      "first": "all",
+      "last": "all",
+      "periods": 1,
+      "songs": 100,
+      "linked": 100,
+      "imported": 0,
+      "fixed": 1,
+      "missed": 0,
+      "pending": 0
+    },
+    {
+      "id": "us-hot100",
+      "label": "US Billboard Hot 100",
+      "kind": "weekly",
+      "site": "https://www.billboard.com",
+      "first": "1958-32",
+      "last": "2026-39",
+      "periods": 3556,
+      "songs": 32715,
+      "linked": 11976,
+      "imported": 11219,
+      "fixed": 5,
+      "missed": 6,
+      "pending": 20733,
+      "expected": 3556,
+      "stored": 3556,
+      "years": {
+        "1958": {
+          "weeks": 21,
+          "expected": 21,
+          "songs": 341,
+          "linked": 65,
+          "imported": 61,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 276
+        },
+        "1959": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 677,
+          "linked": 120,
+          "imported": 115,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 557
+        },
+        "1960": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 683,
+          "linked": 233,
+          "imported": 230,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 450
+        },
+        "1961": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 783,
+          "linked": 292,
+          "imported": 291,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 491
+        },
+        "1962": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 768,
+          "linked": 296,
+          "imported": 295,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 472
+        },
+        "1963": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 754,
+          "linked": 286,
+          "imported": 286,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 468
+        },
+        "1964": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 821,
+          "linked": 323,
+          "imported": 321,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 498
+        },
+        "1965": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 800,
+          "linked": 347,
+          "imported": 334,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 453
+        },
+        "1966": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 822,
+          "linked": 338,
+          "imported": 328,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 484
+        },
+        "1967": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 827,
+          "linked": 332,
+          "imported": 326,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 495
+        },
+        "1968": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 772,
+          "linked": 193,
+          "imported": 190,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 579
+        },
+        "1969": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 762,
+          "linked": 293,
+          "imported": 289,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 469
+        },
+        "1970": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 739,
+          "linked": 304,
+          "imported": 300,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 435
+        },
+        "1971": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 702,
+          "linked": 308,
+          "imported": 305,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 394
+        },
+        "1972": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 673,
+          "linked": 313,
+          "imported": 310,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 360
+        },
+        "1973": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 603,
+          "linked": 304,
+          "imported": 302,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 299
+        },
+        "1974": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 589,
+          "linked": 315,
+          "imported": 309,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 274
+        },
+        "1975": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 648,
+          "linked": 318,
+          "imported": 314,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 330
+        },
+        "1976": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 619,
+          "linked": 295,
+          "imported": 289,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 324
+        },
+        "1977": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 562,
+          "linked": 303,
+          "imported": 295,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 259
+        },
+        "1978": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 535,
+          "linked": 322,
+          "imported": 314,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 213
+        },
+        "1979": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 574,
+          "linked": 327,
+          "imported": 323,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 246
+        },
+        "1980": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 547,
+          "linked": 290,
+          "imported": 281,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 256
+        },
+        "1981": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 513,
+          "linked": 283,
+          "imported": 275,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 230
+        },
+        "1982": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 525,
+          "linked": 310,
+          "imported": 307,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 215
+        },
+        "1983": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 539,
+          "linked": 304,
+          "imported": 300,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 235
+        },
+        "1984": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 527,
+          "linked": 312,
+          "imported": 302,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 215
+        },
+        "1985": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 501,
+          "linked": 313,
+          "imported": 294,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 188
+        },
+        "1986": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 501,
+          "linked": 318,
+          "imported": 311,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 183
+        },
+        "1987": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 492,
+          "linked": 315,
+          "imported": 305,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 177
+        },
+        "1988": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 484,
+          "linked": 306,
+          "imported": 300,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 178
+        },
+        "1989": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 486,
+          "linked": 296,
+          "imported": 293,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 190
+        },
+        "1990": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 474,
+          "linked": 193,
+          "imported": 187,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 281
+        },
+        "1991": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 476,
+          "linked": 177,
+          "imported": 168,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 299
+        },
+        "1992": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 456,
+          "linked": 190,
+          "imported": 181,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 266
+        },
+        "1993": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 443,
+          "linked": 172,
+          "imported": 156,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 271
+        },
+        "1994": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 429,
+          "linked": 159,
+          "imported": 143,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 270
+        },
+        "1995": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 430,
+          "linked": 157,
+          "imported": 149,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 273
+        },
+        "1996": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 406,
+          "linked": 164,
+          "imported": 157,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 242
+        },
+        "1997": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 422,
+          "linked": 155,
+          "imported": 146,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 267
+        },
+        "1998": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 460,
+          "linked": 166,
+          "imported": 151,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 294
+        },
+        "1999": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 416,
+          "linked": 175,
+          "imported": 161,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 241
+        },
+        "2000": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 410,
+          "linked": 170,
+          "imported": 159,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 239
+        },
+        "2001": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 387,
+          "linked": 174,
+          "imported": 162,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 213
+        },
+        "2002": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 399,
+          "linked": 175,
+          "imported": 159,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 224
+        },
+        "2003": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 404,
+          "linked": 203,
+          "imported": 179,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 201
+        },
+        "2004": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 402,
+          "linked": 194,
+          "imported": 173,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 208
+        },
+        "2005": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 438,
+          "linked": 173,
+          "imported": 155,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 265
+        },
+        "2006": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 471,
+          "linked": 164,
+          "imported": 139,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 307
+        },
+        "2007": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 462,
+          "linked": 181,
+          "imported": 162,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 281
+        },
+        "2008": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 511,
+          "linked": 167,
+          "imported": 141,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 344
+        },
+        "2009": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 553,
+          "linked": 182,
+          "imported": 156,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 370
+        },
+        "2010": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 593,
+          "linked": 167,
+          "imported": 147,
+          "fixed": 0,
+          "missed": 3,
+          "pending": 423
+        },
+        "2011": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 601,
+          "linked": 173,
+          "imported": 157,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 426
+        },
+        "2012": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 483,
+          "linked": 170,
+          "imported": 152,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 312
+        },
+        "2013": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 499,
+          "linked": 153,
+          "imported": 141,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 345
+        },
+        "2014": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 471,
+          "linked": 172,
+          "imported": 156,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 299
+        },
+        "2015": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 509,
+          "linked": 167,
+          "imported": 148,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 342
+        },
+        "2016": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 519,
+          "linked": 178,
+          "imported": 169,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 341
+        },
+        "2017": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 567,
+          "linked": 189,
+          "imported": 187,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 378
+        },
+        "2018": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 704,
+          "linked": 185,
+          "imported": 180,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 519
+        },
+        "2019": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 630,
+          "linked": 192,
+          "imported": 189,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 438
+        },
+        "2020": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 817,
+          "linked": 225,
+          "imported": 208,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 592
+        },
+        "2021": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 775,
+          "linked": 201,
+          "imported": 169,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 574
+        },
+        "2022": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 756,
+          "linked": 199,
+          "imported": 164,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 557
+        },
+        "2023": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 774,
+          "linked": 201,
+          "imported": 156,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 573
+        },
+        "2024": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 770,
+          "linked": 187,
+          "imported": 125,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 583
+        },
+        "2025": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 720,
+          "linked": 185,
+          "imported": 104,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 535
+        },
+        "2026": {
+          "weeks": 39,
+          "expected": 39,
+          "songs": 679,
+          "linked": 260,
+          "imported": 55,
+          "fixed": 1,
+          "missed": 0,
+          "pending": 419
+        }
+      },
+      "remaining": 0,
+      "days": 0
+    },
+    {
+      "id": "uk-singles",
+      "label": "UK Official Singles Chart Top 100",
+      "kind": "weekly",
+      "site": "https://www.officialcharts.com",
+      "first": "1952-46",
+      "last": "2026-39",
+      "periods": 2083,
+      "songs": 29254,
+      "linked": 6264,
+      "imported": 5268,
+      "fixed": 4,
+      "missed": 34,
+      "pending": 22956,
+      "expected": 3855,
+      "stored": 2083,
+      "years": {
+        "1952": {
+          "weeks": 7,
+          "expected": 7,
+          "songs": 27,
+          "linked": 6,
+          "imported": 6,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 21
+        },
+        "1953": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 92,
+          "linked": 16,
+          "imported": 12,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 76
+        },
+        "1954": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 97,
+          "linked": 19,
+          "imported": 14,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 78
+        },
+        "1955": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 162,
+          "linked": 21,
+          "imported": 15,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 141
+        },
+        "1956": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 204,
+          "linked": 41,
+          "imported": 39,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 163
+        },
+        "1957": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 210,
+          "linked": 59,
+          "imported": 55,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 151
+        },
+        "1958": {
+          "weeks": 30,
+          "expected": 52,
+          "songs": 141,
+          "linked": 43,
+          "imported": 42,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 98
+        },
+        "1959": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1960": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1961": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1962": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1963": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1964": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1965": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1966": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1967": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1968": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1969": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1970": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1971": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1972": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1973": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1974": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1975": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1976": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1977": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1978": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1979": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1980": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1981": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1982": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1983": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1984": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1985": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1986": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1987": {
+          "weeks": 0,
+          "expected": 53,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1988": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1989": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1990": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1991": {
+          "weeks": 0,
+          "expected": 52,
+          "songs": 0,
+          "linked": 0,
+          "imported": 0,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 0
+        },
+        "1992": {
+          "weeks": 39,
+          "expected": 53,
+          "songs": 859,
+          "linked": 176,
+          "imported": 167,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 683
+        },
+        "1993": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 1095,
+          "linked": 210,
+          "imported": 197,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 885
+        },
+        "1994": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 1485,
+          "linked": 237,
+          "imported": 224,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 1248
+        },
+        "1995": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 1519,
+          "linked": 223,
+          "imported": 209,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 1296
+        },
+        "1996": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 1496,
+          "linked": 241,
+          "imported": 231,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 1255
+        },
+        "1997": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 1551,
+          "linked": 223,
+          "imported": 212,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 1328
+        },
+        "1998": {
+          "weeks": 51,
+          "expected": 53,
+          "songs": 1450,
+          "linked": 227,
+          "imported": 208,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 1223
+        },
+        "1999": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 1324,
+          "linked": 259,
+          "imported": 243,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 1065
+        },
+        "2000": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 1273,
+          "linked": 243,
+          "imported": 228,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 1029
+        },
+        "2001": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 1284,
+          "linked": 268,
+          "imported": 225,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 1015
+        },
+        "2002": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 1472,
+          "linked": 293,
+          "imported": 240,
+          "fixed": 1,
+          "missed": 6,
+          "pending": 1173
+        },
+        "2003": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 1505,
+          "linked": 306,
+          "imported": 241,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 1198
+        },
+        "2004": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 1562,
+          "linked": 338,
+          "imported": 270,
+          "fixed": 0,
+          "missed": 3,
+          "pending": 1221
+        },
+        "2005": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 1208,
+          "linked": 273,
+          "imported": 222,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 933
+        },
+        "2006": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 928,
+          "linked": 277,
+          "imported": 224,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 649
+        },
+        "2007": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 968,
+          "linked": 376,
+          "imported": 314,
+          "fixed": 0,
+          "missed": 3,
+          "pending": 589
+        },
+        "2008": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 803,
+          "linked": 340,
+          "imported": 273,
+          "fixed": 0,
+          "missed": 7,
+          "pending": 456
+        },
+        "2009": {
+          "weeks": 51,
+          "expected": 53,
+          "songs": 749,
+          "linked": 361,
+          "imported": 299,
+          "fixed": 0,
+          "missed": 7,
+          "pending": 381
+        },
+        "2010": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 821,
+          "linked": 318,
+          "imported": 252,
+          "fixed": 0,
+          "missed": 7,
+          "pending": 496
+        },
+        "2011": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 809,
+          "linked": 359,
+          "imported": 274,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 448
+        },
+        "2012": {
+          "weeks": 51,
+          "expected": 52,
+          "songs": 845,
+          "linked": 428,
+          "imported": 333,
+          "fixed": 0,
+          "missed": 2,
+          "pending": 415
+        },
+        "2013": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 886,
+          "linked": 405,
+          "imported": 325,
+          "fixed": 0,
+          "missed": 3,
+          "pending": 478
+        },
+        "2014": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 773,
+          "linked": 314,
+          "imported": 253,
+          "fixed": 1,
+          "missed": 3,
+          "pending": 456
+        },
+        "2015": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 617,
+          "linked": 282,
+          "imported": 237,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 335
+        },
+        "2016": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 552,
+          "linked": 244,
+          "imported": 217,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 307
+        },
+        "2017": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 654,
+          "linked": 284,
+          "imported": 262,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 370
+        },
+        "2018": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 692,
+          "linked": 255,
+          "imported": 235,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 436
+        },
+        "2019": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 714,
+          "linked": 252,
+          "imported": 230,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 462
+        },
+        "2020": {
+          "weeks": 53,
+          "expected": 53,
+          "songs": 732,
+          "linked": 269,
+          "imported": 236,
+          "fixed": 0,
+          "missed": 0,
+          "pending": 463
+        },
+        "2021": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 747,
+          "linked": 255,
+          "imported": 205,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 491
+        },
+        "2022": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 694,
+          "linked": 255,
+          "imported": 203,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 438
+        },
+        "2023": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 705,
+          "linked": 231,
+          "imported": 168,
+          "fixed": 1,
+          "missed": 1,
+          "pending": 473
+        },
+        "2024": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 662,
+          "linked": 253,
+          "imported": 174,
+          "fixed": 1,
+          "missed": 3,
+          "pending": 406
+        },
+        "2025": {
+          "weeks": 52,
+          "expected": 52,
+          "songs": 628,
+          "linked": 239,
+          "imported": 131,
+          "fixed": 2,
+          "missed": 1,
+          "pending": 388
+        },
+        "2026": {
+          "weeks": 39,
+          "expected": 39,
+          "songs": 441,
+          "linked": 256,
+          "imported": 62,
+          "fixed": 0,
+          "missed": 1,
+          "pending": 184
+        }
+      },
+      "remaining": 1772,
+      "days": 6
+    }
+  ]
+}
