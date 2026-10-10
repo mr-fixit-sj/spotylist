@@ -1,0 +1,367 @@
+:root {
+  /* "Night chart": ink and lavender surfaces, a violet-to-magenta brand. Spotify green
+     (--accent) is kept for actions that go to Spotify, so it never reads as Spotify's own UI. */
+  --bg: #f7f5fc;
+  --surface: #ffffff;
+  --text: #17141f;
+  --muted: #686379;
+  --line: #e7e3f0;
+  --brand: #6d4aff;
+  --brand-2: #e93d82;
+  --brand-text: #ffffff;
+  --glow: rgb(124 92 255 / 0.12);
+  --art-opacity: 0.13;
+  --accent: #1db954;
+  --accent-text: #0b3d1e;
+  --missing: #a29db0;
+  color-scheme: light dark;
+}
+
+/* Dark tokens: follow the system unless the viewer forced light, or forced dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e0c15;
+    --surface: #221e2c;
+    --text: #eeeaf6;
+    --muted: #9b95ad;
+    --line: #362f45;
+    --brand: #9d82ff;
+    --brand-2: #ff5c9a;
+    --brand-text: #120d24;
+    --glow: rgb(124 92 255 / 0.22);
+    --art-opacity: 0.2;
+    --accent-text: #04140a;
+    --missing: #5f5a6e;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e0c15;
+  --surface: #221e2c;
+  --text: #eeeaf6;
+  --muted: #9b95ad;
+  --line: #362f45;
+  --brand: #9d82ff;
+  --brand-2: #ff5c9a;
+  --brand-text: #120d24;
+  --glow: rgb(124 92 255 / 0.22);
+  --art-opacity: 0.2;
+  --accent-text: #04140a;
+  --missing: #5f5a6e;
+  color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
+
+/* One fixed hue per country in charts (stories, song history), validated as a set (colour-blind
+   and normal vision, all pairs) for each mode; lines also carry a label. */
+:root { --c-nl: #eb6834; --c-uk: #2a78d6; --c-us: #1baf7a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --c-nl: #d95926; --c-uk: #3987e5; --c-us: #199e70; }
+}
+:root[data-theme="dark"] { --c-nl: #d95926; --c-uk: #3987e5; --c-us: #199e70; }
+
+* { box-sizing: border-box; }
+/* No double-tap zoom (iOS): tapping the week arrows quickly would zoom in instead of stepping.
+   Pinch zoom keeps working. */
+html, a, button, select, input, label, summary { touch-action: manipulation; }
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  /* A soft glow behind the header. */
+  background: radial-gradient(ellipse 900px 360px at 50% -140px, var(--glow), transparent 70%) no-repeat, var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main, .top, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+/* Full screen on a phone (installed app, viewport-fit=cover): keep clear of the notch, the
+   status bar and the home indicator. env() is 0 in a normal browser tab. */
+main, .top, footer {
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 16px;
+  padding-top: calc(24px + env(safe-area-inset-top));
+  padding-bottom: 16px;
+}
+.top h1 { margin: 0; font-size: 1.7rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.top h1 .wordmark-2, .pos {
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* Ranks: top to bottom, so every number has the same colours (a centred 1 in a wide
+   column would otherwise only get the middle of a left-to-right gradient). */
+.pos { background-image: linear-gradient(180deg, var(--brand), var(--brand-2)); }
+.tagline { margin: 4px 0 0; color: var(--muted); }
+
+.brand { min-width: 0; display: flex; align-items: center; gap: 12px; }
+.brand .logo { flex: none; width: 48px; height: 48px; border-radius: 12px; box-shadow: 0 6px 18px rgb(124 92 255 / 0.35); }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.menu { position: relative; flex: none; }
+.menu-button { display: grid; place-items: center; padding: 0; width: 44px; height: 44px; background: var(--surface); }
+.menu-button[aria-expanded="true"] { border-color: var(--muted); }
+.options {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 8px);
+  right: 0;
+  display: grid;
+  gap: 14px;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.18);
+}
+.option { display: grid; gap: 6px; }
+.option-label { font-size: 0.8rem; color: var(--muted); }
+.account { display: flex; align-items: center; gap: 10px; }
+.account-icon { flex: none; width: 28px; color: var(--muted); }
+.account-avatar { flex: none; width: 28px; height: 28px; border-radius: 50%; object-fit: cover; background: var(--line); }
+.account-name { flex: 1; font-size: 0.9rem; max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.option-note { margin: 0; max-width: 32ch; font-size: 0.85rem; color: var(--muted); }
+.import-row { display: flex; gap: 8px; }
+.import-row input { flex: 1; min-width: 0; min-height: 40px; padding: 6px 8px; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+.option-version { margin: 0; padding-top: 10px; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--muted); }
+.option-check { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; cursor: pointer; }
+.option-check input { width: 18px; height: 18px; accent-color: var(--brand); }
+/* Equal-width options, each as wide as the widest label. */
+.segmented { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); overflow: hidden; }
+.segmented button { min-height: 38px; border: 0; border-radius: 0; background: transparent; font-size: 0.9rem; white-space: nowrap; }
+.segmented button + button { border-left: 1px solid var(--line); }
+.segmented button[aria-pressed="true"] { background: var(--brand); color: var(--brand-text); font-weight: 600; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: end;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+}
+.controls label { display: flex; flex-direction: column; gap: 4px; font-size: 0.8rem; color: var(--muted); }
+.controls label:first-child { flex: 1 1 240px; }
+select, button { font: inherit; color: var(--text); }
+select {
+  min-height: 40px;
+  padding: 6px 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  max-width: 100%;
+}
+.stepper { display: flex; gap: 4px; }
+button {
+  min-height: 40px;
+  min-width: 40px;
+  padding: 6px 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.4; cursor: default; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+.icon-button { display: grid; place-items: center; padding: 0; width: 44px; height: 44px; border-radius: 50%; }
+.actions { display: flex; gap: 8px; }
+
+/* Title left, actions (copy / +) top right, also on phones: the title wraps instead. */
+.list-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin: 20px 0 8px; }
+.list-head > div:first-child { min-width: 0; }
+.actions { flex: none; }
+.list-head h2 { margin: 0; font-size: 1.25rem; letter-spacing: -0.01em; }
+.meta { margin: 2px 0 0; color: var(--muted); font-size: 0.9rem; }
+.meta a { color: inherit; }
+.hint { margin: 0 0 8px; padding: 8px 12px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); font-size: 0.9rem; }
+.hint a, .link-button { color: var(--brand); font-weight: 600; }
+.link-button { min-height: 0; min-width: 0; padding: 0; border: 0; background: none; font-size: inherit; text-decoration: underline; cursor: pointer; white-space: nowrap; }
+.link-button svg { vertical-align: -2px; margin-right: 4px; }
+.status { color: var(--muted); margin: 8px 0; }
+.status:empty { display: none; }
+
+.tracks { --pos-digits: 3; list-style: none; margin: 0; padding: 0; }
+.tracks li { border-bottom: 1px solid var(--line); display: flex; align-items: center; }
+.tracks li > a.track { flex: 1; min-width: 0; }
+.tracks a.fix { flex: none; margin-left: 4px; padding: 6px 10px; font-size: 0.8rem; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; text-decoration: none; }
+.tracks a.fix:hover, .tracks a.fix:focus-visible { background: var(--surface); color: inherit; }
+.tracks a.track {
+  display: grid;
+  /* Rank column as wide as the list's longest number (1ch per tabular digit, a little more
+     for the bold weight); numbers centred in it, so a 1 in a Top 100 has no wide gap. */
+  grid-template-columns: calc(var(--pos-digits) * 1.08ch) 48px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 4px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.tracks a.track:hover, .tracks a.track:focus-visible { background: var(--surface); }
+.pos { text-align: center; font-variant-numeric: tabular-nums; font-weight: 700; }
+.cover { width: 48px; height: 48px; border-radius: 6px; background: var(--line); object-fit: cover; }
+img.cover { box-shadow: 0 2px 6px rgb(0 0 0 / 0.25); }
+span.cover { display: grid; place-items: center; color: var(--text); }
+span.cover svg { width: 45%; height: 45%; opacity: 0.25; }
+.names { min-width: 0; }
+.names .title, .names .artist { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.names .artist { color: var(--muted); font-size: 0.9rem; }
+.go { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+.missing .names, .missing .go { color: var(--missing); }
+
+/* Background art (site/art.js): faint, strongest at the top and gone by 60% of the screen,
+   so song text keeps full contrast. */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: var(--art-opacity);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 18%, transparent 60%);
+  mask-image: linear-gradient(to bottom, #000 0, #000 18%, transparent 60%);
+}
+.backdrop svg, .card-art svg { width: 100%; height: 100%; display: block; }
+
+/* Home */
+section.home { margin-top: 20px; }
+.section-title { margin: 32px 0 12px; font-size: 1.25rem; letter-spacing: -0.01em; }
+.section-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
+.section-head .section-title { margin-bottom: 0; }
+.section-head button { min-height: 36px; font-size: 0.9rem; }
+.section-actions { display: flex; gap: 8px; }
+.section-head .icon-only { display: grid; place-items: center; width: 36px; padding: 0; }
+/* A new year fades in when the years turn by themselves (renderHistory). */
+@media (prefers-reduced-motion: no-preference) {
+  .cards.turned { animation: fade-in 0.4s ease-out; }
+}
+@keyframes fade-in { from { opacity: 0; } }
+.section-sub { margin: 4px 0 12px; color: var(--muted); font-size: 0.9rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+.card {
+  display: flex; flex-direction: column;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+}
+.card-head { position: relative; display: grid; padding: 14px 14px 10px; color: inherit; text-decoration: none; isolation: isolate; }
+.card-art { position: absolute; inset: 0; z-index: -1; opacity: 0.35; -webkit-mask-image: linear-gradient(to bottom, #000, transparent); mask-image: linear-gradient(to bottom, #000, transparent); }
+.card-group { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.card-title { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; }
+.card-period { font-size: 0.85rem; color: var(--muted); }
+.card-head:hover .card-title { text-decoration: underline; }
+.tracks.mini { padding: 0 6px; }
+.tracks.mini li:last-child { border-bottom: 0; }
+.tracks.mini a.track { grid-template-columns: calc(var(--pos-digits) * 1.08ch) 40px 1fr; gap: 10px; padding: 6px 4px; }
+.tracks.mini .cover { width: 40px; height: 40px; }
+.tracks.mini .go { display: none; }
+.tracks.mini .names .title { font-size: 0.95rem; }
+.card-more { margin-top: auto; padding: 10px 14px 12px; font-size: 0.85rem; font-weight: 600; color: var(--brand); text-decoration: none; }
+.card-more:hover { text-decoration: underline; }
+
+footer { padding-top: 32px; padding-bottom: calc(32px + env(safe-area-inset-bottom)); color: var(--muted); font-size: 0.8rem; }
+footer a { color: inherit; }
+
+@media (max-width: 520px) {
+  .brand { gap: 10px; }
+  .brand .logo { width: 40px; height: 40px; border-radius: 10px; }
+  .top h1 { font-size: 1.45rem; }
+  .tagline { font-size: 0.9rem; }
+  .tracks a.track { grid-template-columns: calc(var(--pos-digits) * 1.08ch) 40px 1fr; gap: 8px; padding: 8px 0; }
+  .pos { font-size: 0.9rem; }
+  .cover { width: 40px; height: 40px; }
+  .go { display: none; }
+}
+
+/* beatport.html */
+a.brand.home { color: inherit; text-decoration: none; }
+.prose { line-height: 1.6; }
+.prose h2 { font-size: 1.1rem; margin: 24px 0 8px; }
+.prose a { color: inherit; }
+.bookmarklet {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: grab;
+}
+
+/* "Did you know?" on the home page. */
+.fact { margin-top: 0; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--brand); border-radius: 12px; }
+.fact-label { margin: 0 0 4px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.fact-text { margin: 0; font-size: 1rem; line-height: 1.45; }
+.fact-actions { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 8px 0 0; font-size: 0.9rem; }
+.fact-link { color: var(--brand); font-weight: 600; }
+.list-head { flex-wrap: wrap; }
+.list-about { flex-basis: 100%; max-width: 60ch; margin-top: -4px; }
+
+/* Badges before the artist in a chart list: new this week, back after years, long runner, Christmas. */
+.badge { display: inline-block; margin-right: 6px; padding: 0 6px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.68rem; font-weight: 700; line-height: 1.5; letter-spacing: 0.02em; color: var(--muted); vertical-align: 2px; white-space: nowrap; }
+.badge-new { color: var(--brand); border-color: var(--brand); }
+.badge-back { color: var(--brand-2); border-color: var(--brand-2); }
+.badge-xmas { border: 0; padding: 0; font-size: 0.85rem; vertical-align: 0; }
+/* Country flag of a local hit (app.js localFlag): charted in one country only. */
+.flag { display: inline-block; width: 16px; height: 11px; margin-right: 5px; vertical-align: -1px; border-radius: 2px; overflow: hidden; box-shadow: 0 0 0 1px var(--line); }
+.flag svg { display: block; width: 100%; height: 100%; }
+
+/* The song(s) a "Did you know?" fact is about, when followed from it. */
+.tracks li.spot { background: color-mix(in srgb, var(--brand) 14%, transparent); border-radius: 10px; }
+@media (prefers-reduced-motion: no-preference) {
+  .tracks li.spot { animation: spot-in 1.4s ease-out; }
+}
+@keyframes spot-in { from { background: color-mix(in srgb, var(--brand) 38%, transparent); } }
+
+/* Pages at the top of the ☰ menu (menu.js): an icon, a name and what is there. */
+.menu-nav { display: grid; gap: 4px; margin: -4px -4px 2px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.nav-row { display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 10px; color: var(--text); text-decoration: none; }
+.nav-row:hover { background: var(--bg); }
+.nav-row[aria-current="page"] { background: color-mix(in srgb, var(--brand) 14%, transparent); }
+.nav-icon { flex: none; width: 36px; height: 36px; padding: 7px; border-radius: 10px; color: var(--brand-text); background: linear-gradient(135deg, var(--brand), var(--brand-2)); }
+.nav-row strong { display: block; font-size: 0.95rem; }
+.nav-row small { display: block; font-size: 0.8rem; color: var(--muted); }
+
+/* Song history: the button on a chart row, and the panel it opens (history.js). */
+.history-btn { flex: none; display: grid; place-items: center; width: 40px; height: 40px; margin-left: 2px; padding: 0; border: 0; border-radius: 10px; background: transparent; color: var(--muted); cursor: pointer; }
+.history-btn:hover, .history-btn:focus-visible { background: var(--surface); color: var(--brand); }
+.tracks.mini .history-btn { display: none; }
+dialog.history { width: min(560px, calc(100vw - 24px)); max-height: min(86vh, 760px); padding: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--text); box-shadow: 0 16px 48px rgb(0 0 0 / 0.35); }
+dialog.history::backdrop { background: rgb(0 0 0 / 0.5); }
+@media (max-width: 520px) {
+  /* A sheet from the bottom on a phone. */
+  dialog.history { width: 100vw; max-width: 100vw; margin: auto 0 0; border-radius: 16px 16px 0 0; padding-bottom: env(safe-area-inset-bottom); }
+}
+.history-head { display: grid; grid-template-columns: 48px 1fr 40px; gap: 12px; align-items: center; padding: 14px 14px 10px; border-bottom: 1px solid var(--line); }
+.history-head .cover { width: 48px; height: 48px; border-radius: 8px; background: var(--line); object-fit: cover; }
+.history-names { min-width: 0; display: grid; }
+.history-names strong, .history-names span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.history-names span { color: var(--muted); font-size: 0.9rem; }
+.history-close { width: 40px; height: 40px; padding: 0; border: 0; border-radius: 10px; background: transparent; color: var(--muted); font-size: 1.6rem; line-height: 1; cursor: pointer; }
+.history-close:hover { background: var(--bg); color: var(--text); }
+.history-body { padding: 4px 16px 16px; overflow-y: auto; }
+.history-note { margin: 10px 0; color: var(--muted); font-size: 0.9rem; }
+.history-chart { margin-top: 14px; }
+.history-chart-head { margin: 0 0 4px; font-size: 0.9rem; }
+.history-key { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 3px; }
+.history-key.nl { background: var(--c-nl); } .history-key.uk { background: var(--c-uk); } .history-key.us { background: var(--c-us); }
+.history-curve { display: block; width: 100%; height: 64px; }
+.history-curve path { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.history-curve path.nl { stroke: var(--c-nl); } .history-curve path.uk { stroke: var(--c-uk); } .history-curve path.us { stroke: var(--c-us); }
+.history-curve .top-line { stroke: var(--line); stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; }
+.history-curve .base-line { stroke: var(--line); vector-effect: non-scaling-stroke; }
+.history-links { margin: 4px 0 0; font-size: 0.85rem; color: var(--muted); }
+.history-links a { color: var(--brand); font-weight: 600; }
+.history-axis { display: flex; justify-content: space-between; gap: 8px; margin: 10px 0 0; font-size: 0.75rem; color: var(--muted); }
+.history-play { display: inline-block; margin-top: 16px; padding: 10px 16px; border-radius: 999px; background: var(--accent); color: var(--accent-text); font-weight: 700; text-decoration: none; }

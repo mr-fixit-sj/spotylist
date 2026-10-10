@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chart stories · SpotyList</title>
+  <meta name="description" content="What 60 years of Dutch, British and American charts tell: Christmas songs, baby names, comebacks, love songs, how fast hits travel and how long they stay.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <meta name="theme-color" id="theme-color" content="#0e0c15">
+  <script>
+    // Same theme as the rest of the site (index.html), before first paint.
+    var theme = 'dark';
+    try { theme = localStorage.getItem('spotylist-theme') || 'dark'; } catch (e) {}
+    if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="menu.js"></script>
+  <link rel="stylesheet" href="stories.css">
+  <script type="module" src="stories.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./" title="Back to SpotyList">
+      <img class="logo" src="logo.svg" alt="" width="48" height="48">
+      <div>
+        <h1>Chart <span class="wordmark-2">stories</span></h1>
+        <p class="tagline">What 60 years of charts tell</p>
+      </div>
+    </a>
+    <div class="menu" id="menu-root" data-page="stories"></div>
+  </header>
+  <main id="stories">
+    <p class="story-intro">SpotyList keeps the weekly charts of the Netherlands, the United Kingdom and the United States, back to the 1950s. Put side by side, they tell more than who was number one. Six stories, most with their songs to play.</p>
+    <nav class="story-nav" aria-label="Stories">
+      <a href="#christmas">The Christmas gap</a>
+      <a href="#names">Songs that named children</a>
+      <a href="#comebacks">Back in the charts</a>
+      <a href="#love">Love is leaving</a>
+      <a href="#crossings">From America in a week</a>
+      <a href="#turnover">Fewer songs, longer stays</a>
+    </nav>
+    <p class="story-status" id="status">Loading…</p>
+    <div id="chapters"></div>
+    <p class="story-foot">Numbers are worked out from the charts at every update of SpotyList, so they follow the data. <a href="./">Back to the charts</a></p>
+  </main>
+  <div class="story-tip" id="tip" role="tooltip" hidden></div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SpotyList</title>
+  <meta name="description" content="Beatport genre Top 100s and music chart archives from the Netherlands, the UK and the US, linked to Spotify.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <!-- Installable app (Add to Home Screen): manifest, icon, and full screen on iOS. -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SpotyList">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" id="theme-color" content="#0e0c15">
+  <script>
+    // Apply the theme before first paint, so the page does not flash in the wrong colours.
+    // Dark unless the visitor chose Light or Auto (the system setting).
+    var theme = 'dark';
+    try { theme = localStorage.getItem('spotylist-theme') || 'dark'; } catch (e) {}
+    if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div id="backdrop" class="backdrop" aria-hidden="true"></div>
+  <header class="top">
+    <a class="brand home" href="#home" title="Home">
+      <img class="logo" src="logo.svg" alt="" width="48" height="48">
+      <div>
+        <h1>Spoty<span class="wordmark-2">List</span></h1>
+        <p class="tagline">Chart archives, one click from Spotify</p>
+      </div>
+    </a>
+    <div class="menu" id="menu-root" data-page="charts"></div>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Choose a chart">
+      <label>Chart
+        <select id="chart"></select>
+      </label>
+      <label id="year-field">Year
+        <select id="year"></select>
+      </label>
+      <label id="period-field"><span id="period-label">Week</span>
+        <select id="period"></select>
+      </label>
+      <div class="stepper">
+        <button id="prev" type="button" aria-label="Previous">‹</button>
+        <button id="next" type="button" aria-label="Next">›</button>
+      </div>
+    </section>
+
+    <section id="home" class="home" hidden>
+      <aside class="fact" id="fact" aria-labelledby="fact-label" hidden>
+        <p class="fact-label" id="fact-label">Did you know?</p>
+        <p class="fact-text" id="fact-text" aria-live="polite"></p>
+        <p class="fact-actions"><a id="fact-link" class="fact-link" hidden>Show me →</a><button type="button" id="fact-next" class="link-button" hidden>Another fact ↻</button></p>
+      </aside>
+
+      <div class="section-head">
+        <h2 class="section-title" id="history-title">This week in history</h2>
+        <div class="section-actions">
+          <button type="button" id="history-pause" class="icon-only" aria-pressed="false" aria-label="Pause the years" title="Pause">
+            <svg class="icon-pause" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <svg class="icon-play" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" hidden><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg>
+          </button>
+          <button type="button" id="history-next">Another year ↻</button>
+        </div>
+      </div>
+      <p class="section-sub" id="history-sub"></p>
+      <div class="cards" id="home-history"></div>
+
+      <h2 class="section-title">This week</h2>
+      <div class="cards" id="home-week"></div>
+    </section>
+
+    <section class="list-head" id="list-head" hidden>
+      <div>
+        <h2 id="list-title"></h2>
+        <p class="meta"><span id="list-stats"></span><span id="list-source-wrap"> · <a id="list-source" target="_blank" rel="noopener">source</a></span></p>
+      </div>
+      <div class="actions">
+        <button id="copy" type="button" class="primary">Copy Spotify links</button>
+        <button id="playlist" type="button" class="primary icon-button" aria-label="Save as a playlist in Spotify" title="Save as a playlist in Spotify" hidden>
+          <svg class="icon-add" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <svg class="icon-update" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" hidden><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.5v4.2h-4.2" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon-saved" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" hidden><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <p class="meta list-about" id="list-about" hidden></p>
+    </section>
+    <p class="hint" id="playlist-hint" role="status" hidden></p>
+    <p class="hint" id="copy-hint" hidden>
+      Copied. In the Spotify <strong>desktop</strong> app, open or create a playlist and paste (Ctrl/Cmd + V) to add all tracks.
+    </p>
+
+    <p id="status" class="status" role="status"></p>
+    <ol id="tracks" class="tracks"></ol>
+  </main>
+
+  <footer>
+    Chart data from the linked sources; track links via Spotify. Not affiliated with Spotify or the chart publishers.
+  </footer>
+</body>
+</html>

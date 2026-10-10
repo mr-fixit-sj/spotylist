@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Data status · SpotyList</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <meta name="theme-color" id="theme-color" content="#0e0c15">
+  <script>
+    // Same theme as the rest of the site (index.html), before first paint.
+    var theme = 'dark';
+    try { theme = localStorage.getItem('spotylist-theme') || 'dark'; } catch (e) {}
+    if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="menu.js"></script>
+  <link rel="stylesheet" href="status.css">
+  <script type="module" src="status.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./" title="Back to SpotyList">
+      <img class="logo" src="logo.svg" alt="" width="48" height="48">
+      <div>
+        <h1>Data <span class="wordmark-2">status</span></h1>
+        <p class="tagline" id="built">Loading…</p>
+      </div>
+    </a>
+    <div class="menu" id="menu-root" data-page="status"></div>
+  </header>
+  <main id="status">
+    <section class="status-tiles" id="tiles" aria-label="Totals"></section>
+    <section id="weekly" aria-labelledby="weekly-title">
+      <h2 id="weekly-title">Weekly charts</h2>
+      <p class="status-note">Each square is a year. Its colour and number: the share of that year's chart positions linked to Spotify, which is what browsing its weeks shows. Hits that stayed for months count for every week, so this is higher than the share of different songs (in the tooltip and the table).</p>
+      <div class="status-legend" id="legend"></div>
+      <div id="weekly-charts"></div>
+    </section>
+    <section aria-labelledby="lists-title">
+      <h2 id="lists-title">Lists and Beatport</h2>
+      <div class="status-table-wrap" id="lists"></div>
+    </section>
+    <section aria-labelledby="imports-title">
+      <h2 id="imports-title">Your playlist imports</h2>
+      <div class="status-table-wrap" id="imports"></div>
+    </section>
+    <p class="status-note" id="about"></p>
+  </main>
+  <div class="status-tip" id="tip" role="tooltip" hidden></div>
+</body>
+</html>
