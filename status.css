@@ -1,0 +1,65 @@
+/* Data status page (status.html). % linked uses one violet ramp, light to dark on a light
+   surface and dark to light on a dark one; each step keeps its label readable (--seq-ink). */
+:root {
+  --seq-1: #ebe5ff; --seq-2: #cbbcff; --seq-3: #a18aff; --seq-4: #7a5af5; --seq-5: #5234cc;
+  --seq-ink-1: #17141f; --seq-ink-2: #17141f; --seq-ink-3: #17141f; --seq-ink-4: #ffffff; --seq-ink-5: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --seq-1: #352c5c; --seq-2: #4c3a93; --seq-3: #6c52d6; --seq-4: #9c85ff; --seq-5: #cfc3ff;
+    --seq-ink-1: #ffffff; --seq-ink-2: #ffffff; --seq-ink-3: #ffffff; --seq-ink-4: #120d24; --seq-ink-5: #120d24;
+  }
+}
+:root[data-theme="dark"] {
+  --seq-1: #352c5c; --seq-2: #4c3a93; --seq-3: #6c52d6; --seq-4: #9c85ff; --seq-5: #cfc3ff;
+  --seq-ink-1: #ffffff; --seq-ink-2: #ffffff; --seq-ink-3: #ffffff; --seq-ink-4: #120d24; --seq-ink-5: #120d24;
+}
+
+header.top .brand { color: inherit; text-decoration: none; }
+#status { padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
+#status h2 { margin: 32px 0 8px; font-size: 1.15rem; }
+.status-note { margin: 0 0 12px; font-size: 0.85rem; color: var(--muted); }
+
+.status-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-top: 8px; }
+.status-tile { display: grid; gap: 2px; align-content: start; padding: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.status-tile-label { font-size: 0.8rem; color: var(--muted); }
+.status-tile-value { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.status-tile-note { font-size: 0.8rem; color: var(--muted); }
+
+.status-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 12px; font-size: 0.8rem; color: var(--muted); }
+.status-key { display: inline-flex; align-items: center; gap: 6px; }
+.status-swatch { width: 14px; height: 14px; border-radius: 4px; }
+
+.status-chart { margin-bottom: 14px; padding: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.status-chart h3 { margin: 0 0 10px; font-size: 1rem; }
+.status-facts { display: grid; gap: 8px; margin-bottom: 14px; }
+.status-fact { display: grid; grid-template-columns: 5.5em 1fr; gap: 4px 8px; font-size: 0.85rem; }
+.status-fact-label { color: var(--muted); }
+.status-bar { grid-column: 2; height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; }
+.status-bar-fill { display: block; height: 100%; border-radius: 2px; background: var(--brand); }
+
+/* One row per decade, one square per year. */
+.status-grid { display: grid; grid-template-columns: 3.4em repeat(10, minmax(0, 1fr)); gap: 2px; max-width: 460px; font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+.status-col, .status-row { display: grid; place-items: center; color: var(--muted); }
+.status-row { justify-items: start; }
+.status-cell { display: grid; place-items: center; aspect-ratio: 1; border-radius: 4px; cursor: default; user-select: none; }
+.status-cell[data-year]:hover { outline: 2px solid var(--text); outline-offset: -2px; }
+.status-cell.none { visibility: hidden; }
+.status-cell.missing, .status-swatch.missing { border: 1px dashed var(--missing); }
+.status-cell.partial, .status-swatch.partial { box-shadow: inset 0 0 0 2px var(--surface); outline: 1px dashed var(--muted); outline-offset: -1px; }
+.s1 { background: var(--seq-1); color: var(--seq-ink-1); }
+.s2 { background: var(--seq-2); color: var(--seq-ink-2); }
+.s3 { background: var(--seq-3); color: var(--seq-ink-3); }
+.s4 { background: var(--seq-4); color: var(--seq-ink-4); }
+.s5 { background: var(--seq-5); color: var(--seq-ink-5); }
+
+.status-tip { position: fixed; z-index: 20; display: grid; gap: 2px; max-width: 260px; padding: 8px 10px; font-size: 0.8rem; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.25); pointer-events: none; }
+
+.status-details { margin-top: 10px; font-size: 0.85rem; }
+.status-details summary { cursor: pointer; color: var(--muted); }
+.status-table-wrap { overflow-x: auto; }
+.status-table { width: 100%; margin-top: 8px; border-collapse: collapse; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.status-table th, .status-table td { padding: 5px 8px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.status-table th:first-child { text-align: left; white-space: normal; font-weight: 600; }
+.status-table thead th { font-weight: 600; color: var(--muted); }
+.status-table tfoot th, .status-table tfoot td { border-bottom: 0; color: var(--muted); }
